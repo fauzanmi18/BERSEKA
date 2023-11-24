@@ -1,0 +1,278 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <header class="sticky top-0 z-50">
+    <nav class="bg-white px-4 py-4 shadow-md shadow-zinc-400">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <a class="flex items-center order-1 sm:order-2 text-black font-extrabold text-3xl"><img class="cursor-pointer w-[70px]" src="public/berseka-removebg-preview.png" alt="">BERSEKA</a>
+          <a id="hamburger" class="order-2 sm:order-1 lg:hidden"><img class="cursor-pointer" class="text-primary" src="public/img/hamburger.svg" alt=""></a>
+          <div class="hidden lg:order-2 lg:block">
+              <ul class="flex gap-10">
+                  <li class="text-primary font-bold text-md font-circular-circular border-b-2 border-b-primary"><a class="cursor-pointer" href="#home">Home</a></li>
+                  <li class="text-primary opacity-50 font-bold text-md font-circular-circular"><a class="cursor-pointer" href="#feature">Fitur</a></li>
+                  <li class="text-primary opacity-50 font-bold text-md font-circular-circular"><a class="cursor-pointer" href="#why-us">Mengapa Kami?</a></li>
+                  <li class="text-primary opacity-50 font-bold text-md font-circular-circular"><a class="cursor-pointer" href="#footer">Kontak</a></li>
+              </ul>
+          </div>
+          <div class="hidden sm:order-3 sm:block">
+              <button class="grow border bg-white px-8 py-4 font-bold text-primary text-sm rounded-full">Masuk</button>
+              <button class="grow bg-primary px-8 py-4 font-bold text-white text-sm rounded-full">Daftar</button>
+          </div>
+      </div>
+      </div>
+    </nav>
+
+    <div id="bottom-nav" class="z-50 hidden fixed bottom-0 right-0 left-0 p-4 bg-white border lg:hidden">
+        <ul class="flex justify-between">
+            <li class="nav-bottom-menu">
+                <a href="#home" class="cursor-pointer flex justify-center flex-col items-center">
+                    <ion-icon id="menu-icon" name="home-outline" class="text-2xl text-primary"></ion-icon>
+                    <span id="menu-text" class="text-base text-primary font-bold gap-1">Home</span>
+                </a>
+            </li>
+            <li class="nav-bottom-menu">
+                <a href="#feature" class="cursor-pointer flex justify-center flex-col items-center">
+                    <ion-icon id="menu-icon" name="compass-outline" class="text-2xl text-primary opacity-50"></ion-icon>
+                    <span id="menu-text" class="text-base text-primary opacity-50 font-normal gap-1">Fitur</span>
+                </a>
+            </li>
+            <li>
+                <a href="#why-us" class="cursor-pointer flex justify-center flex-col items-center">
+                    <ion-icon name="cash-outline" class="text-2xl text-primary opacity-50"></ion-icon>
+                    <span class="text-base text-abu opacity-50 font-normal gap-1">Mengapa Kami?</span>
+                </a>
+            </li>
+            <li>
+                <a href="#footer" class="cursor-pointer flex justify-center flex-col items-center">
+                    <ion-icon name="call-outline" class="text-2xl text-primary opacity-50"></ion-icon>
+                    <span class="text-base text-primary opacity-50 font-normal gap-1">Kontak</span>
+                </a>
+            </li>
+            <li>
+                <a id="more-button" class="cursor-pointer flex justify-center flex-col items-center">
+                    <ion-icon name="ellipsis-horizontal-outline" class="nav-bottom-menu text-2xl text-primary opacity-50"></ion-icon>
+                    <span class="text-base text-primary opacity-50 font-normal gap-1">More</span>
+                </a>
+            </li>
+        </ul>
+        <div id="more" class="hidden">
+            <div class="bg-white bg-opacity-80 w-full border-y-2 absolute bottom-20 py-4 px-2 left-1/2 -translate-x-1/2 flex gap-4">
+                <button class="grow border bg-white px-8 py-4 font-bold text-primary text-sm rounded-full">Masuk</button>
+                <button class="grow bg-primary px-8 py-4 font-bold text-white text-sm rounded-full">Daftar</button>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="container mx-auto px-4 py-24 lg:py-10">
+        <div class="grid grid-cols-12 items-center">
+            <div class="order-2 lg:order-1 col-span-12 lg:col-span-4">
+                <div class="">
+                    <h1 class="mt-4 mb-6 md:mb-[43px] md:mt-[43px] md:text-[56px] lg:text-[69px] font-circular font-bold text-center lg:text-start text-[40px] text-grey leading-tight">
+                        Buang <span class="text-secondary">SAMPAH</span> Dapat <span class="text-secondary">UPAH</span>
+                    </h1>
+                    <p class="mb-8 md:mb-[43px] md:text-[18px] md:w-3/4 lg:w-full mx-auto text-center lg:text-start text-primary opacity-95 text-base font-inter">
+                      Selamat datang di BERSEKA, tempat di mana setiap tindakan kecil Anda 
+                      untuk merawat lingkungan dapat membuat perbedaan besar! 
+                      Kami percaya bahwa setiap langkah kecil kita dapat membentuk perubahan 
+                      besar dalam menjaga keindahan bumi kita. 
+                      <br>
+                      Dengan BERSEKA, Anda tidak hanya berpartisipasi dalam gerakan global 
+                      untuk merawat lingkungan, tetapi Anda juga mendapatkan manfaat langsung 
+                      dengan mengumpulkan dan membuang sampah.
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center lg:justify-start gap-6">
+                        <button class="bg-primary px-8 py-4 drop-shadow-xl text-white text-sm font-bold rounded-full">
+                            Go To App
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 flex justify-center col-span-12 lg:col-span-8">
+                <img src="public/img/hero1.png" class="w-[400px]">
+            </div>
+        </div>
+    </div>
+  </section> 
+
+  <!-- Feature -->
+  <section id="feature" class="bg-gray-300 opacity-95 pt-36 pb-32">
+    <div class="container mx-auto">
+      <div class="px-4">
+          <div class="mx-auto text-center mb-16">
+              <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">
+                Bagaimana <span class="text-primary">BERSEKA</span> Bekerja?
+              </h2>
+          </div>
+      </div>
+
+      <div class="flex flex-wrap gap-4 justify-center items-center">
+        <div class="card w-96 bg-base-100 shadow-xl mx-4">
+          <figure class="px-10 pt-10">
+            <img src="public/img/feature/tb-1.avif" alt="Sampah" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Kumpulkan Sampah Anda</h2>
+            <p>
+              Dengan menggunakan BERSEKA, Anda dapat dengan mudah melacak 
+              dan mengumpulkan sampah di sekitar Anda. 
+            </p>
+          </div>
+        </div>
+
+        <div class="card w-96 bg-base-100 shadow-xl mx-4">
+          <figure class="px-10 pt-10">
+            <img src="public/img/feature/coin.avif" alt="Point" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Dapatkan Point Berharga</h2>
+            <p>
+              Setiap kali Anda mengumpulkan sampah dan memasukkannya ke dalam aplikasi kami, Anda akan mendapatkan poin berharga.
+            </p>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl mx-4">
+          <figure class="px-10 pt-10">
+            <img src="public/img/feature/swap.avif" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Tukarkan Poin Anda</h2>
+            <p>
+              Kumpulkan poin Anda dan tukarkan mereka dengan hadiah-hadiah istimewa
+              yang menarik dan berguna. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us? -->
+  <section id="why-us" class="pt-36 pb-32">
+    <div class="container mx-auto">
+      <div class="px-4">
+          <div class="mx-auto text-center mb-16">
+              <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">
+                Mengapa harus <span class="text-primary">BERSEKA</span>?
+              </h2>
+          </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+        <!-- Konten Div 1 -->
+        <div class="p-4">
+          <h2 class="font-bold text-2xl mb-4">Berubah Menjadi Kebiasaan</h2>
+          <p>BERSEKA dirancang untuk membuat kebiasaan baik dari aktivitas sederhana seperti membuang sampah. Dengan mengumpulkan poin, Anda merangsang kebiasaan positif untuk merawat lingkungan setiap hari.</p>
+        </div>
+
+        <!-- Konten Div 2 -->
+          <div class="p-4">
+            <h2 class="font-bold text-2xl mb-4">Dukungan Komunitas</h2>
+            <p>Bergabunglah dengan komunitas [Nama Aplikasi] yang bersemangat tentang melindungi bumi kita. Berbagi kisah, tips, dan inspirasi dengan orang-orang yang memiliki tujuan serupa.</p>
+          </div>
+
+        <!-- Konten Div 3 -->
+          <div class="p-4">
+            <h2 class="font-bold text-2xl mb-4">Hadiah Khusus</h2>
+            <p>Nikmati keuntungan eksklusif, penawaran khusus, dan hadiah-hadiah menarik yang dapat Anda peroleh dengan mengumpulkan poin. Kami percaya bahwa usaha Anda dalam merawat lingkungan patut dihargai.</p>
+          </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer" class="bg-secondary opacity-90 pt-20 pb-12">
+    <div class="container">
+        <div class="flex flex-wrap">
+            <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/4">
+                <h3 class="font-semibold text-xl text-white mb-5">Contact</h3>
+                <p class="inline-block text-base">kontakberseka@gmail.com</p>
+            </div>
+            <div class="w-full px-4 mb-12 md:w-1/4">
+                <h3 class="font-semibold text-xl text-white mb-5">
+                    Menu
+                </h3>
+                <ul class="text-slate-300">
+                    <li>
+                        <a href="#home" class="inline-block text-base hover:text-primary mb-3">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#feature" class="inline-block text-base hover:text-primary mb-3">
+                            Feature
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portofolio" class="inline-block text-base hover:text-primary mb-3">
+                            Why Us?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Contact" class="inline-block text-base hover:text-primary mb-3">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full px-4 mb-12 md:w-1/4">
+                <h3 class="font-semibold text-xl text-white mb-5">
+                    Social Media
+                </h3>
+                <ul class="text-slate-300">
+                    <li>
+                        <a href="https://www.instagram.com/fauzanmi18" target="_blank" class="inline-block text-base hover:text-primary mb-3">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/fauzan-muhammad-iqbal-darussalam-38a371250/" target="_blank" class="inline-block text-base hover:text-primary mb-3">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full px-4 mb-12 md:w-1/4">
+                <h3 class="font-semibold text-xl text-white mb-5">
+                    Tech For This Website
+                </h3>
+                <ul class="text-slate-300">
+                    <li>
+                        <a class="inline-block text-base mb-3">
+                            HTML
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block text-base mb-3">
+                            Javascript
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block text-base">
+                            Tailwind CSS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-full pt-10 border-t border-slate-700">
+            <p class="font-medium text-sm text-slate-300 text-center">
+                Made By Fauzan Muhammad Iqbal, Bandung 2023
+            </p>
+        </div>
+    </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
