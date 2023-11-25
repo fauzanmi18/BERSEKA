@@ -17,7 +17,7 @@
                   <li class="text-primary font-bold text-md font-circular-circular border-b-2 border-b-primary"><a class="cursor-pointer" href="#home">Home</a></li>
                   <li class="text-primary opacity-50 font-bold text-md font-circular-circular"><a class="cursor-pointer" href="#feature">Fitur</a></li>
                   <li class="text-primary opacity-50 font-bold text-md font-circular-circular"><a class="cursor-pointer" href="#why-us">Mengapa Kami?</a></li>
-                  <li class="text-primary opacity-50 font-bold text-md font-circular-circular"><a class="cursor-pointer" href="#footer">Kontak</a></li>
+                  <li class="text-primary opacity-50 font-bold text-md font-circular-circular"><a class="cursor-pointer" href="#contact">Kontak</a></li>
               </ul>
           </div>
           <div class="hidden sm:order-3 sm:block">
@@ -49,7 +49,7 @@
                 </a>
             </li>
             <li>
-                <a href="#footer" class="cursor-pointer flex justify-center flex-col items-center">
+                <a href="#contact" class="cursor-pointer flex justify-center flex-col items-center">
                     <ion-icon name="call-outline" class="text-2xl text-primary opacity-50"></ion-icon>
                     <span class="text-base text-primary opacity-50 font-normal gap-1">Kontak</span>
                 </a>
@@ -156,7 +156,7 @@
   </section>
 
   <!-- Why Us? -->
-  <section id="why-us" class="bg-white pt-36 pb-32">
+  <section id="why-us" class="bg-white pt-36 pb-30">
     <div class="container mx-auto">
       <div class="px-4">
           <div class="mx-auto text-center mb-16">
@@ -190,89 +190,122 @@
     </div>
   </section>
 
-
-  <footer id="footer" class="bg-secondary opacity-90 pt-20 pb-12">
-    <div class="container">
-        <div class="flex flex-wrap">
-            <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/4">
-                <h3 class="font-semibold text-xl text-white mb-5">Contact</h3>
-                <p class="inline-block text-base">kontakberseka@gmail.com</p>
-            </div>
-            <div class="w-full px-4 mb-12 md:w-1/4">
-                <h3 class="font-semibold text-xl text-white mb-5">
-                    Menu
-                </h3>
-                <ul class="text-slate-300">
-                    <li>
-                        <a href="#home" class="inline-block text-base hover:text-primary mb-3">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#feature" class="inline-block text-base hover:text-primary mb-3">
-                            Feature
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#portofolio" class="inline-block text-base hover:text-primary mb-3">
-                            Why Us?
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Contact" class="inline-block text-base hover:text-primary mb-3">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="w-full px-4 mb-12 md:w-1/4">
-                <h3 class="font-semibold text-xl text-white mb-5">
-                    Social Media
-                </h3>
-                <ul class="text-slate-300">
-                    <li>
-                        <a href="https://www.instagram.com/fauzanmi18" target="_blank" class="inline-block text-base hover:text-primary mb-3">
-                            Instagram
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/fauzan-muhammad-iqbal-darussalam-38a371250/" target="_blank" class="inline-block text-base hover:text-primary mb-3">
-                            LinkedIn
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="w-full px-4 mb-12 md:w-1/4">
-                <h3 class="font-semibold text-xl text-white mb-5">
-                    Tech For This Website
-                </h3>
-                <ul class="text-slate-300">
-                    <li>
-                        <a class="inline-block text-base mb-3">
-                            HTML
-                        </a>
-                    </li>
-                    <li>
-                        <a class="inline-block text-base mb-3">
-                            Javascript
-                        </a>
-                    </li>
-                    <li>
-                        <a class="inline-block text-base">
-                            Tailwind CSS
-                        </a>
-                    </li>
-                </ul>
+  <section id="contact" class="bg-white pt-36 pb-32">
+    <div class="container mx-auto border-t-2">
+        <div class="w-full px-4">
+            <div class="mx-auto text-center mt-10 mb-16">
+                <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">
+                    Hubungi Kami
+                </h2>
             </div>
         </div>
 
-        <div class="w-full pt-10 border-t border-slate-700">
-            <p class="font-medium text-sm text-slate-300 text-center">
-                Made By Fauzan Muhammad Iqbal, Bandung 2023
-            </p>
-        </div>
+        <form>
+            <div class="w-full lg:w-2/3 lg:mx-auto">
+                <div class="w-full px-4 mb-4">
+                    <label for="nama" class="text-2xl text-primary font-bold">Nama</label>
+                    <input type="text" id="nama" class="w-full bg-gray-300 text-black p-3 rounded-md focus:outline-none focus:ring-secondary focus:ring-2 focus:border-secondary">
+                </div>
+                <div class="w-full px-4 mb-4">
+                    <label for="email" class="text-2xl text-primary font-bold">Email</label>
+                    <input type="email" id="email" class="w-full bg-gray-300 text-black p-3 rounded-md focus:outline-none focus:ring-secondary focus:ring-2 focus:border-secondary">
+                </div>
+                <div class="w-full px-4 mb-4">
+                    <label for="pesan" class="text-2xl text-primary font-bold">Pesan</label>
+                    <textarea name="pesan" id="pesan" class="w-full bg-gray-300 text-black p-3 rounded-md focus:outline-none focus:ring-secondary focus:ring-2 focus:border-secondary" cols="20" rows="5"></textarea>
+                </div>
+                <div class="w-full px-4">
+                    <button class="w-full text-white text-lg font-bold bg-secondary py-3 px-8 rounded-md hover:bg-primary transition duration-500">
+                        Kirim
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
-</footer>
-  <script src="script.js"></script>
+  </section>
+
+    <footer id="footer" class="bg-secondary opacity-90 pt-20 pb-12">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/4">
+                    <h3 class="font-semibold text-xl text-white mb-5">Contact</h3>
+                    <p class="inline-block text-base">kontakberseka@gmail.com</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/4">
+                    <h3 class="font-semibold text-xl text-white mb-5">
+                        Menu
+                    </h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" class="inline-block text-base hover:text-primary mb-3">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#feature" class="inline-block text-base hover:text-primary mb-3">
+                                Feature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portofolio" class="inline-block text-base hover:text-primary mb-3">
+                                Why Us?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Contact" class="inline-block text-base hover:text-primary mb-3">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/4">
+                    <h3 class="font-semibold text-xl text-white mb-5">
+                        Social Media
+                    </h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="https://www.instagram.com/fauzanmi18" target="_blank" class="inline-block text-base hover:text-primary mb-3">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/fauzan-muhammad-iqbal-darussalam-38a371250/" target="_blank" class="inline-block text-base hover:text-primary mb-3">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/4">
+                    <h3 class="font-semibold text-xl text-white mb-5">
+                        Tech For This Website
+                    </h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a class="inline-block text-base mb-3">
+                                HTML
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inline-block text-base mb-3">
+                                Javascript
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inline-block text-base">
+                                Tailwind CSS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full pt-10 border-t border-slate-700">
+                <p class="font-medium text-sm text-slate-300 text-center">
+                    Made By Fauzan Muhammad Iqbal, Bandung 2023
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
